@@ -218,11 +218,11 @@ export const JarCollapsible: FC<{
     depositToken.address.toLowerCase() ===
     JAR_DEPOSIT_TOKENS[NETWORK_NAMES.ETH].USDC.toLowerCase();
 
-  const isMaiJar =
-    depositToken.address.toLowerCase() ===
-      JAR_DEPOSIT_TOKENS[NETWORK_NAMES.POLY].QUICK_MIMATIC_USDC.toLowerCase() ||
-    depositToken.address.toLowerCase() ===
-      JAR_DEPOSIT_TOKENS[NETWORK_NAMES.POLY].QUICK_MIMATIC_QI.toLowerCase();
+  const isMaiJar = false;
+    // depositToken.address.toLowerCase() ===
+    //   JAR_DEPOSIT_TOKENS[NETWORK_NAMES.POLY].QUICK_MIMATIC_USDC.toLowerCase() ||
+    // depositToken.address.toLowerCase() ===
+    //   JAR_DEPOSIT_TOKENS[NETWORK_NAMES.POLY].QUICK_MIMATIC_QI.toLowerCase();
 
   const isSaddleJar =
     depositToken.address.toLowerCase() ===
