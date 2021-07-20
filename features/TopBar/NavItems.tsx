@@ -75,14 +75,14 @@ export const NavItems: FC = () => {
   return (
     <div>
       <Link href="/jars" passHref>
-        <NavItem active={router.pathname.startsWith("/jars")}>jars</NavItem>
+        <NavItem active={router.pathname.startsWith("/jars")}>slices</NavItem>
       </Link>
 
       <Link href="/farms" passHref>
         <NavItem active={router.pathname.endsWith("farms")}>farms</NavItem>
       </Link>
       <Link href="/dill" passHref>
-        <NavItem active={router.pathname.startsWith("/dill")}>dill</NavItem>
+        <NavItem active={router.pathname.startsWith("/dill")}>salt</NavItem>
       </Link>
       <Popover content={infoItems(router)} trigger="hover">
         <Link href="/info" passHref>

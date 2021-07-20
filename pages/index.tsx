@@ -20,17 +20,11 @@ const Home: FC = () => {
       <Page>
         <Page.Content>
           <h1 style={{ fontSize: `2rem`, fontFamily: `Source Code Pro` }}>
-            The Future of Finance is Green
+            Fresh & UnPickled!
           </h1>
           <Grid.Container gap={2}>
             <Grid xs={24} sm={24} md={16}>
               <Balances />
-            </Grid>
-            <Grid xs={24} sm={24} md={8}>
-              <DepositZap />
-            </Grid>
-            <Grid xs={24} sm={24} md={24}>
-              {chainName === NETWORK_NAMES.POLY ? null : <Zap />}
             </Grid>
           </Grid.Container>
         </Page.Content>

@@ -57,7 +57,7 @@ export const Logo: FC = () => {
   return (
     <Link href="/" passHref>
       <LogoLink>
-        <TextLogo active={router.pathname === "/"}>Pickle</TextLogo>
+        <TextLogo active={router.pathname === "/"}>Cucumber</TextLogo>
       </LogoLink>
     </Link>
   );

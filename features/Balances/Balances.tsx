@@ -121,55 +121,6 @@ export const Balances: FC = () => {
         <Grid xs={24} sm={12} md={12}>
           <PriceComponent />
         </Grid>
-        <Grid xs={24} sm={12} md={12}>
-          <Card>
-            <h2>Market Cap</h2>
-            <DataPoint>
-              <span>
-                {prices?.pickle && totalSupply && marketCap
-                  ? formatDollars(marketCap)
-                  : "--"}
-              </span>
-            </DataPoint>
-            <Card.Footer>
-              {totalSupply && tooltipText && marketCap ? (
-                <Tooltip
-                  placement="bottom"
-                  style={{ cursor: `help` }}
-                  text={tooltipText}
-                >
-                  Total Supply:{" "}
-                  {totalSupply ? formatPickles(marketCap / prices?.pickle) : "--"}
-                  <PickleIcon size={14} />
-                </Tooltip>
-              ) : (
-                <span>
-                  Total Supply: --
-                  <PickleIcon size={14} margin="0 0 0 0.5rem" />
-                </span>
-              )}
-            </Card.Footer>
-          </Card>
-        </Grid>
-        <Grid xs={24} sm={12} md={12}>
-          <Card>
-            <h2>Total Value Locked</h2>
-            <DataPoint>
-              <span>
-                {protocolInfo ? formatDollars(protocolInfo.totalValue) : "--"}
-              </span>
-            </DataPoint>
-            <Card.Footer>
-              <Tooltip
-                placement="bottom"
-                text="Total ETH/PICKLE pool value on Uniswap."
-                style={{ cursor: `help` }}
-              >
-                Pool size: {protocolInfo ? formatDollars(protocolInfo.totalValue - protocolInfo.jarValue) : "--"}
-              </Tooltip>
-            </Card.Footer>
-          </Card>
-        </Grid>
       </Container>
     </>
   );

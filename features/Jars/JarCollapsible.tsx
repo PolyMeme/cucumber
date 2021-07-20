@@ -132,35 +132,35 @@ export const JAR_DEPOSIT_TOKEN_TO_ICON: {
 
   // Polygon Jars
 
-  "0x1Edb2D8f791D2a51D56979bf3A25673D6E783232": (
-    <LpIcon swapIconSrc={"/comethswap.png"} tokenIconSrc={"/usdc.png"} />
-  ),
-  "0xb0b5e3bd18eb1e316bcd0bba876570b3c1779c55": (
-    <LpIcon swapIconSrc={"/comethswap.png"} tokenIconSrc={"/pickle.png"} />
-  ),
-  "0x80676b414a905de269d0ac593322af821b683b92": (
-    <LpIcon swapIconSrc={"/comethswap.png"} tokenIconSrc={"/matic.png"} />
-  ),
-  "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063": "/dai.png",
+  // "0x1Edb2D8f791D2a51D56979bf3A25673D6E783232": (
+  //   <LpIcon swapIconSrc={"/comethswap.png"} tokenIconSrc={"/usdc.png"} />
+  // ),
+  // "0xb0b5e3bd18eb1e316bcd0bba876570b3c1779c55": (
+  //   <LpIcon swapIconSrc={"/comethswap.png"} tokenIconSrc={"/pickle.png"} />
+  // ),
+  // "0x80676b414a905de269d0ac593322af821b683b92": (
+  //   <LpIcon swapIconSrc={"/comethswap.png"} tokenIconSrc={"/matic.png"} />
+  // ),
+  // "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063": "/dai.png",
   "0xE7a24EF0C5e95Ffb0f6684b813A78F2a3AD7D171": "/3crv.png",
-  "0xc2755915a85c6f6c1c0f3a86ac8c058f11caa9c9": (
-    <LpIcon swapIconSrc={"/sushiswap.png"} tokenIconSrc={"/usdt.png"} />
-  ),
-  "0xc4e595acdd7d12fec385e5da5d43160e8a0bac0e": (
-    <LpIcon swapIconSrc={"/sushiswap.png"} tokenIconSrc={"/matic.png"} />
-  ),
-  "0x160532d2536175d65c03b97b0630a9802c274dad": (
-    <LpIcon swapIconSrc={"/quickswap.png"} tokenIconSrc={"/mimatic.png"} />
-  ),
-  "0x74dC9cdCa9a96Fd0B7900e6eb953d1EA8567c3Ce": (
-    <LpIcon swapIconSrc={"/quickswap.png"} tokenIconSrc={"/mimatic.png"} />
-  ),
-  "0x7AfcF11F3e2f01e71B7Cc6b8B5e707E42e6Ea397": (
-    <LpIcon swapIconSrc={"/quickswap.png"} tokenIconSrc={"/mimatic.png"} />
-  ),
-  "0xb4d09ff3dA7f9e9A2BA029cb0A81A989fd7B8f17": (
-    <LpIcon swapIconSrc={"/ironswap.png"} tokenIconSrc={"/3usd.png"} />
-  ),
+  // "0xc2755915a85c6f6c1c0f3a86ac8c058f11caa9c9": (
+  //   <LpIcon swapIconSrc={"/sushiswap.png"} tokenIconSrc={"/usdt.png"} />
+  // ),
+  // "0xc4e595acdd7d12fec385e5da5d43160e8a0bac0e": (
+  //   <LpIcon swapIconSrc={"/sushiswap.png"} tokenIconSrc={"/matic.png"} />
+  // ),
+  // "0x160532d2536175d65c03b97b0630a9802c274dad": (
+  //   <LpIcon swapIconSrc={"/quickswap.png"} tokenIconSrc={"/mimatic.png"} />
+  // ),
+  // "0x74dC9cdCa9a96Fd0B7900e6eb953d1EA8567c3Ce": (
+  //   <LpIcon swapIconSrc={"/quickswap.png"} tokenIconSrc={"/mimatic.png"} />
+  // ),
+  // "0x7AfcF11F3e2f01e71B7Cc6b8B5e707E42e6Ea397": (
+  //   <LpIcon swapIconSrc={"/quickswap.png"} tokenIconSrc={"/mimatic.png"} />
+  // ),
+  // "0xb4d09ff3dA7f9e9A2BA029cb0A81A989fd7B8f17": (
+  //   <LpIcon swapIconSrc={"/ironswap.png"} tokenIconSrc={"/3usd.png"} />
+  // ),
 };
 
 const USDC_SCALE = ethers.utils.parseUnits("1", 12);

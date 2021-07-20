@@ -69,12 +69,12 @@ export const Prices: FC = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Buy $Pickle
+          Buy $LOSER
         </TradeButton>
         <DataPoint>
           <Label>
             <CoinIcon src="/pickle.png" />
-            PICKLE:
+            LOSER:
           </Label>
           <Monospace>
             {prices?.pickle ? formatDollars(prices.pickle) : "--"}

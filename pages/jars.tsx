@@ -15,7 +15,7 @@ const Jars: FC = () => {
       <Page>
         <Page.Content>
           <h1 style={{ fontSize: `2rem`, fontFamily: `Source Code Pro` }}>
-            Jars
+            Slices
           </h1>
           <JarList />
         </Page.Content>

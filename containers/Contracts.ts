@@ -60,8 +60,8 @@ import { SushiMinichef__factory as SushiMinichefFactory } from "./Contracts/fact
 import { SushiComplexRewarder } from "./Contracts/SushiComplexRewarder";
 import { SushiComplexRewarder__factory as SushiComplexRewarderFactory } from "./Contracts/factories/SushiComplexRewarder__factory";
 
-import { Ironchef } from "./Contracts/Ironchef";
-import { Ironchef__factory as IronchefFactory } from "./Contracts/factories/Ironchef__factory";
+// import { Ironchef } from "./Contracts/Ironchef";
+// import { Ironchef__factory as IronchefFactory } from "./Contracts/factories/Ironchef__factory";
 
 import { PickleRewarder } from "./Contracts/PickleRewarder";
 import {
@@ -164,7 +164,7 @@ export const COMETH_PICKLE_MUST_REWARDS =
 export const COMETH_MATIC_MUST_REWARDS =
   "0x2328c83431a29613b1780706E0Af3679E3D04afd";
 export const SUSHI_MINICHEF = "0x0769fd68dFb93167989C6f7254cd0D766Fb2841F";
-export const MINICHEF = "0x20B2a3fc7B13cA0cCf7AF81A68a14CB3116E8749";
+export const MINICHEF = "0x6172e0aa9adef0c743fdcf98092bc0b489ac6a32";
 export const MATIC_COMPLEX_REWARDER =
   "0xa3378Ca78633B3b9b2255EAa26748770211163AE";
 export const PICKLE_REWARDER = "0xE28287544005094be096301E5eE6E2A6E6Ef5749";
@@ -173,7 +173,7 @@ export const AM3CRV_POOL_ADDR = "0x445FE580eF8d70FF569aB36e80c647af338db351";
 
 export const CONTROLLER_MAI = "0x7749fbd85f388f4a186b1d339c2fd270dd0aa647";
 
-export const IRON_CHEF = "0x1fd1259fa8cdc60c6e8c86cfa592ca1b8403dfad";
+// export const IRON_CHEF = "0x1fd1259fa8cdc60c6e8c86cfa592ca1b8403dfad";
 
 function useContracts() {
   const { signer, chainName, multicallProvider } = Connection.useContainer();
@@ -257,7 +257,7 @@ function useContracts() {
     setyvBoostMigrator,
   ] = useState<YvboostMigrator | null>(null);
 
-  const [ironchef, setIronchef] = useState<Ironchef | null>(null);
+  // const [ironchef, setIronchef] = useState<Ironchef | null>(null);
 
   const initContracts = async () => {
     if (providerOrSigner && addresses) {
@@ -364,7 +364,7 @@ function useContracts() {
       setAm3crvPool(PoolFactory.connect(AM3CRV_POOL_ADDR, signer));
       setMinichef(MinichefFatory.connect(MINICHEF, signer));
 
-      setIronchef(IronchefFactory.connect(IRON_CHEF, signer));
+      // setIronchef(IronchefFactory.connect(IRON_CHEF, signer));
     }
   };
 
@@ -412,7 +412,7 @@ function useContracts() {
     am3crvPool,
     pickleRewarder,
     controllerMai,
-    ironchef,
+    // ironchef,
   };
 }
 
