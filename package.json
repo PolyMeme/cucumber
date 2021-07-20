@@ -82,7 +82,6 @@
     "babel-plugin-styled-components": "^1.11.1",
     "eslint": "^7.9.0",
     "eslint-config-prettier": "^6.11.0",
-    "husky": ">=4",
     "lint-staged": ">=10",
     "prettier": "2.1.2",
     "typechain": "^4.0.0",

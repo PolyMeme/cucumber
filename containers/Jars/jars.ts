@@ -259,7 +259,7 @@ export const DEPOSIT_TOKENS_LINK = {
   COMETH_USDC_WETH:
     "https://swap.cometh.io/#/add/0x2791bca1f2de4661ed88a30c99a7a9449aa84174/0x7ceb23fd6bc0add59e62ac25578270cff1b9f619",
   COMETH_PICKLE_MUST:
-    "https://swap.cometh.io/#/add/0x9c78ee466d6cb57a4d01fd887d2b5dfb2d46288f/0x2b88ad57897a8b496595925f43048301c37615da",
+    "https://swap.cometh.io/#/add/0x9c78ee466d6cb57a4d01fd887d2b5dfb2d46288f/0x2a43d81d8122977b4d1716cc31d66e36d6871eac",
   COMETH_MATIC_MUST:
     "https://swap.cometh.io/#/add/0x9c78ee466d6cb57a4d01fd887d2b5dfb2d46288f/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
   DAI:
@@ -320,7 +320,7 @@ export const DEPOSIT_TOKENS_JAR_NAMES = {
   COMETH_PICKLE_MUST: "polyJar 1b",
   COMETH_MATIC_MUST: "polyJar 1c",
   DAI: "polyJar 2a",
-  AM3CRV: "polyJar 3a",
+  AM3CRV: "polySlice 3a",
   POLY_SUSHI_ETH_USDT: "polyJar 4a",
   POLY_SUSHI_MATIC_ETH: "polyJar 4b",
   QUICK_MIMATIC_USDC: "polyJar 5a",
@@ -373,7 +373,7 @@ const PRICE_IDS: Record<string, PriceIds> = {
   "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619": "eth",
   "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063": "dai",
   "0x9c78ee466d6cb57a4d01fd887d2b5dfb2d46288f": "must",
-  "0x2b88ad57897a8b496595925f43048301c37615da": "pickle",
+  "0x2a43d81d8122977b4d1716cc31d66e36d6871eac": "pickle",
   "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270": "matic",
   "0x0b3f868e0be5597d5db7feb59e1cadbb0fdda50a": "sushi",
   "0xc2132d05d31c914a87c6611c10748aeb04b58e8f": "usdt",

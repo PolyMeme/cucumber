@@ -394,68 +394,68 @@ export const useJarWithAPY = (network: ChainName, jars: Input): Output => {
           JAR_DEPOSIT_TOKENS[NETWORK_NAMES.POLY].IRON_3USD,
       );
 
-      const [
-        comethUsdcWethApy,
-        comethPickleMustApy,
-        comethMaticMustApy,
-        aaveDaiAPY,
-        sushiEthUsdtApy,
-        sushiMaticEthApy,
-        quickMimaticUsdcApy,
-        quickMimaticQiApy,
-        iron3usdApy
-      ] = await Promise.all([
-        calculateComethAPY(COMETH_USDC_WETH_REWARDS),
-        calculateComethAPY(COMETH_PICKLE_MUST_REWARDS),
-        calculateComethAPY(COMETH_MATIC_MUST_REWARDS),
-        calculateAaveAPY(
-          JAR_DEPOSIT_TOKENS[NETWORK_NAMES.POLY].DAI,
-          "0x0b198b5EE64aB29c98A094380c867079d5a1682e",
-        ),
-        calculateSushiAPY(
-          JAR_DEPOSIT_TOKENS[NETWORK_NAMES.POLY].POLY_SUSHI_ETH_USDT,
-        ),
-        calculateSushiAPY(
-          JAR_DEPOSIT_TOKENS[NETWORK_NAMES.POLY].POLY_SUSHI_MATIC_ETH,
-        ),
-        calculateMasterChefAPY(usdcMimaticJar),
-        calculateMasterChefAPY(qiMimaticJar),
-        calculateIronChefAPY(iron3usdJar)
-      ]);
+      // const [
+      //   comethUsdcWethApy,
+      //   comethPickleMustApy,
+      //   comethMaticMustApy,
+      //   aaveDaiAPY,
+      //   sushiEthUsdtApy,
+      //   sushiMaticEthApy,
+      //   quickMimaticUsdcApy,
+      //   quickMimaticQiApy,
+      //   iron3usdApy
+      // ] = await Promise.all([
+      //   calculateComethAPY(COMETH_USDC_WETH_REWARDS),
+      //   calculateComethAPY(COMETH_PICKLE_MUST_REWARDS),
+      //   calculateComethAPY(COMETH_MATIC_MUST_REWARDS),
+      //   calculateAaveAPY(
+      //     JAR_DEPOSIT_TOKENS[NETWORK_NAMES.POLY].DAI,
+      //     "0x0b198b5EE64aB29c98A094380c867079d5a1682e",
+      //   ),
+      //   calculateSushiAPY(
+      //     JAR_DEPOSIT_TOKENS[NETWORK_NAMES.POLY].POLY_SUSHI_ETH_USDT,
+      //   ),
+      //   calculateSushiAPY(
+      //     JAR_DEPOSIT_TOKENS[NETWORK_NAMES.POLY].POLY_SUSHI_MATIC_ETH,
+      //   ),
+      //   calculateMasterChefAPY(usdcMimaticJar),
+      //   calculateMasterChefAPY(qiMimaticJar),
+      //   calculateIronChefAPY(iron3usdJar)
+      // ]);
 
       const promises = jars.map(async (jar) => {
         let APYs: Array<JarApy> = [];
 
-        if (jar.jarName === DEPOSIT_TOKENS_JAR_NAMES.COMETH_USDC_WETH) {
-          APYs = [
-            ...comethUsdcWethApy,
-            ...getComethPairDayAPY(
-              JAR_DEPOSIT_TOKENS[NETWORK_NAMES.POLY].COMETH_USDC_WETH,
-            ),
-          ];
-        }
+        // if (jar.jarName === DEPOSIT_TOKENS_JAR_NAMES.COMETH_USDC_WETH) {
+        //   APYs = [
+        //     ...comethUsdcWethApy,
+        //     ...getComethPairDayAPY(
+        //       JAR_DEPOSIT_TOKENS[NETWORK_NAMES.POLY].COMETH_USDC_WETH,
+        //     ),
+        //   ];
+        // }
 
-        if (jar.jarName === DEPOSIT_TOKENS_JAR_NAMES.COMETH_PICKLE_MUST) {
-          APYs = [
-            ...comethPickleMustApy,
-            ...getComethPairDayAPY(
-              JAR_DEPOSIT_TOKENS[NETWORK_NAMES.POLY].COMETH_PICKLE_MUST,
-            ),
-          ];
-        }
+        // if (jar.jarName === DEPOSIT_TOKENS_JAR_NAMES.COMETH_PICKLE_MUST) {
+        //   APYs = [
+        //     ...comethPickleMustApy,
+        //     ...getComethPairDayAPY(
+        //       JAR_DEPOSIT_TOKENS[NETWORK_NAMES.POLY].COMETH_PICKLE_MUST,
+        //     ),
+        //   ];
+        // }
 
-        if (jar.jarName === DEPOSIT_TOKENS_JAR_NAMES.COMETH_MATIC_MUST) {
-          APYs = [
-            ...comethMaticMustApy,
-            ...getComethPairDayAPY(
-              JAR_DEPOSIT_TOKENS[NETWORK_NAMES.POLY].COMETH_MATIC_MUST,
-            ),
-          ];
-        }
+        // if (jar.jarName === DEPOSIT_TOKENS_JAR_NAMES.COMETH_MATIC_MUST) {
+        //   APYs = [
+        //     ...comethMaticMustApy,
+        //     ...getComethPairDayAPY(
+        //       JAR_DEPOSIT_TOKENS[NETWORK_NAMES.POLY].COMETH_MATIC_MUST,
+        //     ),
+        //   ];
+        // }
 
-        if (jar.jarName === DEPOSIT_TOKENS_JAR_NAMES.DAI) {
-          APYs = [...aaveDaiAPY];
-        }
+        // if (jar.jarName === DEPOSIT_TOKENS_JAR_NAMES.DAI) {
+        //   APYs = [...aaveDaiAPY];
+        // }
 
         if (jar.jarName === DEPOSIT_TOKENS_JAR_NAMES.AM3CRV) {
           APYs = [
@@ -465,47 +465,47 @@ export const useJarWithAPY = (network: ChainName, jars: Input): Output => {
           ];
         }
 
-        if (jar.jarName === DEPOSIT_TOKENS_JAR_NAMES.POLY_SUSHI_ETH_USDT) {
-          APYs = [
-            ...sushiEthUsdtApy,
-            ...getSushiPairDayAPY(
-              JAR_DEPOSIT_TOKENS[NETWORK_NAMES.POLY].POLY_SUSHI_ETH_USDT,
-            ),
-          ];
-        }
+        // if (jar.jarName === DEPOSIT_TOKENS_JAR_NAMES.POLY_SUSHI_ETH_USDT) {
+        //   APYs = [
+        //     ...sushiEthUsdtApy,
+        //     ...getSushiPairDayAPY(
+        //       JAR_DEPOSIT_TOKENS[NETWORK_NAMES.POLY].POLY_SUSHI_ETH_USDT,
+        //     ),
+        //   ];
+        // }
 
-        if (jar.jarName === DEPOSIT_TOKENS_JAR_NAMES.POLY_SUSHI_MATIC_ETH) {
-          APYs = [
-            ...sushiMaticEthApy,
-            ...getSushiPairDayAPY(
-              JAR_DEPOSIT_TOKENS[NETWORK_NAMES.POLY].POLY_SUSHI_MATIC_ETH,
-            ),
-          ];
-        }
+        // if (jar.jarName === DEPOSIT_TOKENS_JAR_NAMES.POLY_SUSHI_MATIC_ETH) {
+        //   APYs = [
+        //     ...sushiMaticEthApy,
+        //     ...getSushiPairDayAPY(
+        //       JAR_DEPOSIT_TOKENS[NETWORK_NAMES.POLY].POLY_SUSHI_MATIC_ETH,
+        //     ),
+        //   ];
+        // }
 
-        if (jar.jarName === DEPOSIT_TOKENS_JAR_NAMES.QUICK_MIMATIC_USDC) {
-          APYs = [
-            ...quickMimaticUsdcApy,
-            ...getQuickPairDayAPY(
-              JAR_DEPOSIT_TOKENS[NETWORK_NAMES.POLY].QUICK_MIMATIC_USDC,
-            ),
-          ];
-        }
+        // if (jar.jarName === DEPOSIT_TOKENS_JAR_NAMES.QUICK_MIMATIC_USDC) {
+        //   APYs = [
+        //     ...quickMimaticUsdcApy,
+        //     ...getQuickPairDayAPY(
+        //       JAR_DEPOSIT_TOKENS[NETWORK_NAMES.POLY].QUICK_MIMATIC_USDC,
+        //     ),
+        //   ];
+        // }
 
-        if (jar.jarName === DEPOSIT_TOKENS_JAR_NAMES.QUICK_MIMATIC_QI) {
-          APYs = [
-            ...quickMimaticQiApy,
-            ...getQuickPairDayAPY(
-              JAR_DEPOSIT_TOKENS[NETWORK_NAMES.POLY].QUICK_MIMATIC_QI,
-            ),
-          ];
-        }
+        // if (jar.jarName === DEPOSIT_TOKENS_JAR_NAMES.QUICK_MIMATIC_QI) {
+        //   APYs = [
+        //     ...quickMimaticQiApy,
+        //     ...getQuickPairDayAPY(
+        //       JAR_DEPOSIT_TOKENS[NETWORK_NAMES.POLY].QUICK_MIMATIC_QI,
+        //     ),
+        //   ];
+        // }
 
-        if (jar.jarName === DEPOSIT_TOKENS_JAR_NAMES.IRON_3USD) {
-          APYs = [
-            ...iron3usdApy,
-          ];
-        }
+        // if (jar.jarName === DEPOSIT_TOKENS_JAR_NAMES.IRON_3USD) {
+        //   APYs = [
+        //     ...iron3usdApy,
+        //   ];
+        // }
 
 
         let apr = 0;

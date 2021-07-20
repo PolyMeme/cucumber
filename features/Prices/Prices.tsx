@@ -65,7 +65,7 @@ export const Prices: FC = () => {
     <Card style={{ height: "169px" }}>
       <Card.Content>
         <TradeButton
-          href={chainName === NETWORK_NAMES.POLY ? "https://swap.cometh.io/#/swap?inputCurrency=0x9c78ee466d6cb57a4d01fd887d2b5dfb2d46288f&outputCurrency=0x2b88ad57897a8b496595925f43048301c37615da" : "https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x429881672b9ae42b8eba0e26cd9c73711b891ca5"}
+          href={chainName === NETWORK_NAMES.POLY ? "https://swap.cometh.io/#/swap?inputCurrency=0x9c78ee466d6cb57a4d01fd887d2b5dfb2d46288f&outputCurrency=0x2a43d81d8122977b4d1716cc31d66e36d6871eac" : "https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x429881672b9ae42b8eba0e26cd9c73711b891ca5"}
           target="_blank"
           rel="noopener noreferrer"
         >

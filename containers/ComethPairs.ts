@@ -11,7 +11,7 @@ const addresses = {
   weth: "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
   matic: "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
   must: "0x9C78EE466D6Cb57A4d01Fd887D2b5dFb2D46288f",
-  pickle: "0x2b88ad57897a8b496595925f43048301c37615da",
+  pickle: "0x2a43d81d8122977b4d1716cc31d66e36d6871eac",
 };
 
 interface Token {
