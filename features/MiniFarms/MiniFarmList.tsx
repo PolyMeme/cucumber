@@ -37,8 +37,8 @@ export const MiniFarmList: FC = () => {
       <Grid.Container gap={1}>
         <Grid md={16}>
           <p>
-            Farms allow you to earn dual PICKLE <MiniIcon source="/pickle.png" />{" "}
-            and MATIC <MiniIcon source={"/matic.png"} /> rewards by staking tokens. (Note: MATIC rewards end August 23)
+            Farms allow you to earn dual LOSER <MiniIcon source="/pickle.png" />{" "}
+            and FOMO <MiniIcon source={"/matic.png"} /> rewards by staking tokens. (Note: Rewards are limited)
             <br />
             Hover over the displayed APY to see where the returns are coming
             from.

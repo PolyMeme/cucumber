@@ -21,16 +21,7 @@ const Gauges: FC = () => {
               label={false}
               style={{ textAlign: "center", fontSize: "15px" }}
             >
-              Welcome to the new Farms. If you're looking for tokens you
-              deposited, it may be in our old Farms
-              <br />
-              <Link
-                href="/old-farms"
-                passHref
-                style={{ color: "var(--link-color)" }}
-              >
-                Click here to see the old Farms
-              </Link>
+              Welcome to cucumber farms! There are no farms on main net yet, for our farms please switch to the polygon network.
             </Note>
           )}
           <h1 style={{ fontSize: `2rem`, fontFamily: `Source Code Pro` }}>
@@ -39,7 +30,8 @@ const Gauges: FC = () => {
           {chainName === NETWORK_NAMES.POLY ? (
             <MiniFarmList />
           ) : (
-            <GaugeList />
+            // <GaugeList />
+            <p>There are no farms on ETH Main net at current.</p>
           )}
         </Page.Content>
         <Footer />
