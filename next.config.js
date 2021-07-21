@@ -1,5 +1,12 @@
 /* eslint-env node */
 module.exports = {
+  target: "serverless",
+  webpack: (config, options) => {
+    config.externals.push({
+        bufferutil: "bufferutil"
+    })
+    return config
+  },
   typescript: {
     ignoreBuildErrors: true,
   },
