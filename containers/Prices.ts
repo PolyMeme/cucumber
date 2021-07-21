@@ -108,7 +108,7 @@ function usePrices() {
       comp: response["compound-governance-token"].usd,
       eth: response.ethereum.usd,
       susd: response.nusd.usd,
-      pickle: response["pickle-finance"].usd,
+      pickle: 0.69,// response["pickle-finance"].usd,//TEMPORARY! TODO: fetch prices from quickswap somehow when LP is deployed.
       usdt: response.tether.usd,
       usdc: response["usd-coin"].usd,
       crv: response["curve-dao-token"].usd,
