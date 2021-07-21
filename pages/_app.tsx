@@ -122,13 +122,13 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
           }}
         />
 
-        <meta property="og:title" content="Farm PICKLE tokens" />
+        <meta property="og:title" content="Farm LOSER tokens" />
         <meta
           property="og:description"
-          content="The future of finance is green"
+          content="The future of finance is sliced"
         />
-        <meta property="og:image" content="https://i.imgur.com/N23Hjh0.png" />
-        <meta property="og:url" content="https://app.pickle.finance" />
+        <meta property="og:image" content="https://i.imgur.com/FMwdJ1C.png" />
+        <meta property="og:url" content="https://degenloser.club" />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <GeistProvider theme={geistTheme}>
