@@ -81,17 +81,17 @@ export const NavItems: FC = () => {
       <Link href="/farms" passHref>
         <NavItem active={router.pathname.endsWith("farms")}>farms</NavItem>
       </Link>
-      <Link href="/dill" passHref>
+      {/* <Link href="/dill" passHref>
         <NavItem active={router.pathname.startsWith("/dill")}>salt</NavItem>
-      </Link>
-      <Popover content={infoItems(router)} trigger="hover">
+      </Link> */}
+      {/* <Popover content={infoItems(router)} trigger="hover">
         <Link href="/info" passHref>
           <NavItem active={router.pathname.startsWith("/info")}>info</NavItem>
         </Link>
-      </Popover>
-      <Link href="https://feedback.pickle.finance/" passHref>
+      </Popover> */}
+      <Link href="https://polygon.gnosis-safe.io/app/#/safes/0x47799d40e20180c93747112a68530B5Ed7516666/balances" passHref>
         <NavItem target="_blank" rel="noopener noreferrer">
-          Feedback
+          DegenDAO
         </NavItem>
       </Link>
     </div>
