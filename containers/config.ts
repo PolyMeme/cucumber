@@ -40,10 +40,10 @@ export const config: Config = {
       // pickle: "0x2b88ad57897a8b496595925f43048301c37615da",
       // masterChef: "0x20B2a3fc7B13cA0cCf7AF81A68a14CB3116E8749",
       // controller: "0x83074F0aB8EDD2c1508D3F657CeB5F27f6092d09",
-      masterChef: "0x6172e0aa9adef0c743fdcf98092bc0b489ac6a32",
+      masterChef: "0x6172E0AA9AdEf0c743fDCf98092BC0B489aC6A32",
       pickle: "0x2a43d81d8122977b4d1716cc31d66e36d6871eac",
       controller: "0x45E4E26F2F8aD3DA78eFb9036e0701623E6FF3E3",
-      minichef: "0x6172e0aa9adef0c743fdcf98092bc0b489ac6a32"
+      minichef: "0x6172E0AA9AdEf0c743fDCf98092BC0B489aC6A32"
     },
   },
 };
