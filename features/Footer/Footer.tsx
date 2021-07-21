@@ -31,7 +31,7 @@ const NavItem = styled.a`
 export const Footer: FC = () => {
   return (
     <Container>
-      <NavItem
+      {/* <NavItem
         target="_blank"
         rel="noopener noreferrer"
         href="https://v2.info.uniswap.org/pair/0xdc98556Ce24f007A5eF6dC1CE96322d65832A819"
@@ -86,6 +86,13 @@ export const Footer: FC = () => {
         href="https://docs.pickle.finance"
       >
         DOCS
+      </NavItem> */}
+      <NavItem
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://docs.pickle.finance"
+      >
+        DegenDAO
       </NavItem>
     </Container>
   );
