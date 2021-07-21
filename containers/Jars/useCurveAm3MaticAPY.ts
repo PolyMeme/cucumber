@@ -138,11 +138,11 @@ export const useCurveAm3MaticAPY = (): Output => {
         lp: (aaveAPY || 0) * 100,
       },
       {
-        matic: getCompoundingAPY(maticAPY * 0.8 || 0),
+        matic: getCompoundingAPY(maticAPY * 0.995 || 0),
         apr: maticAPY * 100 * 0.995 || 0,
       },
       {
-        crv: getCompoundingAPY(crvAPY * 0.8 || 0),
+        crv: getCompoundingAPY(crvAPY * 0.995 || 0),
         apr: crvAPY * 100 * 0.995 || 0,
       },
     ],
